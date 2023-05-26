@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginHorizontal="1dp"
+    android:orientation="horizontal"
+    android:background="@drawable/baseline"
+    >
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <RelativeLayout
+        android:id="@+id/rLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:text="Sahil Kumar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/LmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="07:30pm"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/Lmsg"
+            android:layout_below="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="This is my last message"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

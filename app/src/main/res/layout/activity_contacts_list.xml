@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsList">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:title="@string/app_name"
+        android:elevation="4dp"
+        android:background="#AB71CF"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@id/mainBar"
+        >
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#DEB1F7"
+            />
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

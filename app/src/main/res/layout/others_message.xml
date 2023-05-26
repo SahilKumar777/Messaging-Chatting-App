@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginVertical="5dp"
+        android:elevation="3dp"
+        android:layout_gravity="start"
+        android:background="@drawable/other_msg_back">
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:background="@drawable/round_corner"
+        />
+        <TextView
+            android:id="@+id/uName"
+            android:layout_toEndOf="@id/profile_pic"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            />
+        <LinearLayout
+            android:layout_alignStart="@id/uName"
+            android:layout_alignLeft="@id/uName"
+            android:layout_below="@id/uName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/msg_body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="This is my message"
+                android:textSize="18sp"
+                android:textColor="#050505"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:10pm"
+                android:textSize="16sp"
+                android:textColor="#222"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="bottom"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

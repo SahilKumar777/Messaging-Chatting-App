@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="start"
+        android:elevation="3dp"
+        android:background="@drawable/other_msg_back">
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:background="@drawable/round_corner"
+            />
+        <TextView
+            android:id="@+id/uName"
+            android:layout_toEndOf="@id/profile_pic"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            />
+        <RelativeLayout
+            android:layout_below="@id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="220dp"
+                android:layout_height="260dp"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/msg_time"
+                android:layout_alignRight="@id/imageView"
+                android:layout_alignBottom="@id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:10pm"
+                android:textSize="16sp"
+                android:textColor="#222"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_centerInParent="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/cancelUpload"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/downloadB"
+                android:layout_alignBottom="@id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_file_download_black_24dp"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

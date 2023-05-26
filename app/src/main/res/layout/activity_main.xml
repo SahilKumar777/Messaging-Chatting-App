@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_back"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#AB71CF"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:subtitle="Online"
+        app:subtitleTextColor="#E61515"
+        app:logo="@drawable/gradient_back"
+        app:navigationIcon="@drawable/ic_chevron_left_black_24dp"
+        />
+
+
+
+        <ListView
+            android:id="@+id/message_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/base"
+            android:layout_below="@id/toolbar"
+            android:divider="#00587070"
+            />
+
+    <ImageView
+        android:id="@+id/downScrollIcon"
+        android:layout_alignBottom="@id/message_view"
+        android:layout_alignRight="@id/message_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_file_download_black_24dp"
+        android:background="@drawable/round_corner"
+        />
+
+    <LinearLayout
+        android:id="@+id/base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Type Message Here"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/filesB"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:src="@drawable/ic_attachment_black_24dp" />
+
+            <ImageView
+                android:id="@+id/cameraB"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_camera_black_24dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sendB"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

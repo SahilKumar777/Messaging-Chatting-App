@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_file_upload_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="upload"
+        />
+    <item
+        android:id="@+id/mutenote"
+        android:icon="@drawable/ic_send_black_24dp"
+        app:showAsAction="always"
+        android:title="mute"
+        />
+    <item
+        android:id="@+id/Refresh"
+        android:icon="@drawable/ic_camera_black_24dp"
+        app:showAsAction="always"
+        android:title="refresh"
+        />
+    <item
+        android:id="@+id/materials"
+        android:title="Study Materials"
+
+        />
+    <item
+        android:id="@+id/grInfo"
+        android:title="Group Info"
+        />
+    <item
+        android:id="@+id/clearChat"
+        android:title="Clear Chat"
+        />
+    <item
+        android:id="@+id/muteNotific"
+        android:title="Mute Notification"
+        />
+    <item
+        android:id="@+id/block"
+        android:title="Block"
+        />
+
+</menu>
